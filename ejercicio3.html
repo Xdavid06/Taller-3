@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejercicio 3 del Taller Practico 3: pagina a tres columnas con menu superior y buscador">
+    <meta name="keywords" content="CECAR, HTML, CSS, ejercicio 3, wireframe, columnas, fieldset">
+    <meta name="user" content="Nombre del Estudiante">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio # 3</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina-ejercicio3">
+
+    <!-- Barra propia del taller: permite que todas las paginas queden enlazadas entre si -->
+    <nav class="barra-taller">
+        <a href="index.html">Menu Principal</a>
+        <a href="ejercicio1.html">Ejercicio # 1</a>
+        <a href="ejercicio2.html">Ejercicio # 2</a>
+        <a href="ejercicio3.html">Ejercicio # 3</a>
+        <a href="ejercicio4.html">Ejercicio # 4</a>
+    </nav>
+
+    <div class="ej3-pagina">
+
+        <!-- Menu superior con buscador -->
+        <header class="ej3-cabecera">
+            <nav class="ej3-menu">
+                <a href="#">Αρχική</a> |
+                <a href="#">Προκήρυξη</a> |
+                <a href="#">Πληροφορίες</a> |
+                <a href="#">Συμμετοχή</a> |
+                <a href="#">Εγγραφή</a> |
+                <a href="#">Εκδρομή</a>
+            </nav>
+
+            <form class="ej3-buscador" action="#" method="get">
+                <label for="buscar">&#9906;</label>
+                <input type="search" id="buscar" name="buscar" placeholder="search">
+            </form>
+        </header>
+
+        <div class="ej3-columnas">
+
+            <!-- Columna izquierda dentro de un recuadro con titulo -->
+            <section class="ej3-columna-izquierda">
+                <fieldset>
+                    <legend>Group Name</legend>
+
+                    <div class="marco-imagen ej3-imagen-grande"></div>
+
+                    <p>
+                        Πιο κάνεις ατόμου γλιτώσει μα, αν που μέσης είχαμε παράγοντες. Ας όχι αιφνώ
+                        νιρβάνα. Δε πιο λιγότερο μεταγλωττιστής, όταν αιρήσεις διάσημα το πως. Νέο οι
+                        επενδυτής συνεντεύξης. Στη δούλευε εφαρμογή ιδιαίτερα τι, ώρα καθώς πετούν οι.
+                        Από δε σπίτι πιθανότητες, φίλος σκεφτείς προσπάθεια πω μην.
+                    </p>
+                    <p>
+                        Σας πω δείξει εφαρμογή, τότε αποτελέσει ως κλπ. Ως αλγόριθμου προβληματική ναί.
+                        Τη μάθε ανακλύψεις δημιουργήσεις και, τη έξι πουλάς νόμιζες παρατηρούμενη. Μιας
+                        εκτελέσει στο θα. Εγώ μα δουλεύει χρησιμοποιώντας, τη μια χώρου κόψεις πηγαίου.
+                    </p>
+                    <p>
+                        Τι έξι θέμα πελάτες επιτυχία. Όρο πόρτες εντολές ώς, πιάνει
+                    </p>
+                </fieldset>
+            </section>
+
+            <!-- Columna central -->
+            <section class="ej3-columna-centro">
+                <div class="ej3-fila-cajas">
+                    <div class="ej3-caja-gris"></div>
+                    <div class="ej3-caja-gris"></div>
+                </div>
+
+                <div class="marco-imagen ej3-imagen-centro"></div>
+
+                <p>
+                    Λέει ωραίο αναφορά ανά πω, νέες επενδυτής διακόψουμε εγώ ώς, ως τον δουλεύουν
+                    εργοστασίου. Δε νέου γι'αυτό κακόκεφους σας.
+                </p>
+
+                <div class="ej3-fila-cajas">
+                    <div class="ej3-caja-gris"></div>
+                    <div class="ej3-caja-gris"></div>
+                </div>
+            </section>
+
+            <!-- Columna derecha con la galeria de imagenes -->
+            <aside class="ej3-columna-derecha">
+                <div class="marco-imagen"></div>
+                <div class="marco-imagen"></div>
+                <div class="marco-imagen"></div>
+                <div class="marco-imagen"></div>
+            </aside>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

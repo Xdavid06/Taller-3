@@ -1,0 +1,907 @@
+/* ==========================================================================
+   Taller Practico # 3 - Programacion y Tecnologias Web I (CECAR)
+   Hoja de estilos general del proyecto
+   Secciones:
+     1. Estilos generales y elementos reutilizables
+     2. index.html  (Menu Principal)
+     3. ejercicio1.html
+     4. ejercicio2.html
+     5. ejercicio3.html
+     6. ejercicio4.html
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. ESTILOS GENERALES Y ELEMENTOS REUTILIZABLES
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #222222;
+    background-color: #f2f2f2;
+}
+
+/* Barra superior que enlaza todas las paginas del taller */
+.barra-taller {
+    background-color: #1f1f1f;
+    padding: 8px 16px;
+}
+
+.barra-taller a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 18px;
+}
+
+.barra-taller a:hover {
+    text-decoration: underline;
+}
+
+/* Recuadro que simula una imagen del wireframe (rectangulo con una X) */
+.marco-imagen {
+    position: relative;
+    min-height: 70px;
+    border: 1px solid #555555;
+    background-color: #ffffff;
+    background-image:
+        linear-gradient(to top right, transparent calc(50% - 0.5px), #555555 50%, transparent calc(50% + 0.5px)),
+        linear-gradient(to bottom right, transparent calc(50% - 0.5px), #555555 50%, transparent calc(50% + 0.5px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marco-imagen span {
+    background-color: #ffffff;
+    padding: 0 4px;
+    font-size: 11px;
+    color: #333333;
+}
+
+/* Lineas grises que representan el texto de relleno del wireframe */
+.lineas-texto {
+    height: 105px;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0 14px,
+        #c9c9c9 14px 15px
+    );
+}
+
+.lineas-cortas {
+    height: 60px;
+}
+
+
+/* ==========================================================================
+   2. index.html - MENU PRINCIPAL
+   ========================================================================== */
+
+.menu-encabezado {
+    background-color: #0b6b3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+.menu-encabezado h1 {
+    margin: 0 0 8px 0;
+    font-size: 26px;
+}
+
+.menu-encabezado p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.menu-contenido {
+    max-width: 700px;
+    margin: 24px auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 24px;
+}
+
+.menu-contenido h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #0b6b3a;
+    padding-bottom: 8px;
+}
+
+.menu-intro {
+    color: #555555;
+}
+
+.menu-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-lista li {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 12px 0;
+}
+
+.menu-lista a {
+    font-size: 17px;
+    font-weight: bold;
+    color: #0b6b3a;
+    text-decoration: none;
+}
+
+.menu-lista a:hover {
+    text-decoration: underline;
+}
+
+.menu-lista span {
+    display: block;
+    color: #666666;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.menu-pie {
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+    padding: 16px;
+}
+
+.menu-pie p {
+    margin: 2px 0;
+}
+
+
+/* ==========================================================================
+   3. ejercicio1.html
+   ========================================================================== */
+
+.ej1-pagina {
+    max-width: 920px;
+    margin: 18px auto;
+    background-color: #ffffff;
+    border: 1px solid #aaaaaa;
+    padding: 14px;
+}
+
+/* --- Encabezado --- */
+.ej1-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ej1-marca {
+    display: flex;
+    align-items: flex-start;
+}
+
+.ej1-logo {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.ej1-logo-simbolo {
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.ej1-logo-texto {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.ej1-titulos h1 {
+    margin: 0;
+    font-size: 21px;
+}
+
+.ej1-titulos h2 {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+}
+
+.ej1-cabecera-derecha {
+    text-align: right;
+}
+
+.ej1-idiomas {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ej1-idiomas li {
+    display: inline-block;
+    border: 1px solid #888888;
+    font-size: 10px;
+    padding: 1px 5px;
+    margin-left: 3px;
+}
+
+.ej1-enlaces-superiores {
+    font-size: 11px;
+    margin: 14px 0 6px 0;
+}
+
+.ej1-enlaces-superiores a {
+    color: #333333;
+    text-decoration: none;
+}
+
+/* --- Menu con buscador --- */
+.ej1-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7a7a7a;
+    padding: 4px 8px;
+}
+
+.ej1-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ej1-menu li {
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.ej1-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.ej1-buscador input {
+    border: 1px solid #cccccc;
+    font-size: 11px;
+    padding: 2px 4px;
+    width: 110px;
+}
+
+.ej1-buscador button {
+    border: 1px solid #cccccc;
+    background-color: #dddddd;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+/* --- Banner --- */
+.ej1-banner {
+    height: 170px;
+    margin: 10px 0;
+}
+
+/* --- Distribucion en dos columnas --- */
+.ej1-cuerpo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.ej1-columna-principal {
+    flex: 3;
+    margin-right: 12px;
+}
+
+.ej1-lateral {
+    flex: 1;
+}
+
+.ej1-bloque {
+    border: 1px solid #d5d5d5;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.ej1-titulo-barra {
+    background-color: #9a9a9a;
+    color: #ffffff;
+    font-size: 13px;
+    margin: -8px -8px 10px -8px;
+    padding: 4px 8px;
+}
+
+.ej1-titulo-centrado {
+    text-align: center;
+}
+
+/* --- Noticia principal --- */
+.ej1-noticia {
+    display: flex;
+}
+
+.ej1-imagen-noticia {
+    width: 170px;
+    height: 120px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.ej1-noticia-texto {
+    flex: 1;
+}
+
+.ej1-noticia-texto p {
+    margin: 0 0 6px 0;
+    font-size: 12px;
+}
+
+.ej1-botones {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.ej1-botones button {
+    width: 130px;
+    margin: 0 18px;
+    padding: 3px 0;
+    border: 1px solid #999999;
+    background-color: #f1f1f1;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* --- Galeria del boletin --- */
+.ej1-galeria {
+    display: flex;
+}
+
+.ej1-galeria figure {
+    flex: 1;
+    margin: 0 6px;
+}
+
+.ej1-galeria .marco-imagen {
+    height: 80px;
+}
+
+.ej1-galeria figcaption {
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+/* --- Opiniones de los usuarios --- */
+.ej1-opiniones h3 {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0 0 6px 0;
+}
+
+/* --- Columna lateral --- */
+.ej1-lateral section {
+    border: 1px solid #d5d5d5;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.ej1-video {
+    height: 90px;
+    border: 1px solid #999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ej1-play {
+    font-size: 26px;
+    color: #777777;
+}
+
+.ej1-controles-video {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+}
+
+.ej1-control {
+    font-size: 11px;
+    color: #333333;
+}
+
+.ej1-progreso {
+    flex: 1;
+    height: 8px;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    margin: 0 4px;
+    position: relative;
+}
+
+.ej1-punto {
+    position: absolute;
+    left: 30%;
+    top: -3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #333333;
+}
+
+.ej1-boton-ancho {
+    width: 100%;
+    padding: 3px 0;
+    border: 1px solid #999999;
+    background-color: #f1f1f1;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.ej1-lista-navegar {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 12px;
+}
+
+.ej1-lista-navegar li {
+    margin-bottom: 6px;
+}
+
+/* --- Pie de pagina --- */
+.ej1-pie {
+    border-top: 3px solid #999999;
+    margin-top: 12px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.ej1-pie-enlaces a {
+    color: #333333;
+    font-size: 12px;
+    margin: 0 8px;
+}
+
+.ej1-copyright {
+    font-size: 11px;
+    color: #333333;
+}
+
+
+/* ==========================================================================
+   4. ejercicio2.html
+   ========================================================================== */
+
+.ej2-pagina {
+    max-width: 920px;
+    margin: 18px auto;
+    background-color: #ffffff;
+}
+
+/* --- Barra de navegacion --- */
+.ej2-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f3a4a;
+    padding: 10px 20px;
+}
+
+.ej2-logo {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.ej2-kar {
+    color: #ffffff;
+}
+
+.ej2-ma {
+    color: #d9534f;
+}
+
+.ej2-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ej2-menu li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 16px;
+}
+
+.ej2-icono {
+    display: block;
+    color: #ffffff;
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+
+.ej2-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* --- Slider --- */
+.ej2-slider {
+    position: relative;
+}
+
+.ej2-slider-imagen {
+    height: 230px;
+    border: none;
+    background-color: #d8d8d8;
+}
+
+.ej2-flecha {
+    position: absolute;
+    top: 45%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.ej2-flecha-izquierda {
+    left: 12px;
+}
+
+.ej2-flecha-derecha {
+    right: 12px;
+}
+
+.ej2-slider-texto {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: #b0474d;
+    color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+    padding: 6px 12px;
+}
+
+.ej2-puntos {
+    text-align: center;
+    padding: 8px 0;
+}
+
+.ej2-puntos span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #999999;
+    margin: 0 3px;
+}
+
+/* --- Secciones de contenido --- */
+.ej2-seccion {
+    display: flex;
+    align-items: center;
+    background-color: #ededed;
+    margin-bottom: 12px;
+    min-height: 150px;
+}
+
+.ej2-caja-azul,
+.ej2-caja-naranja {
+    flex: 0 0 38%;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.ej2-caja-azul {
+    background-color: #2f92c8;
+}
+
+.ej2-caja-naranja {
+    background-color: #ee7f1b;
+}
+
+.ej2-caja-azul h2,
+.ej2-caja-naranja h2 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.ej2-perfil {
+    text-align: center;
+    padding: 12px;
+}
+
+.ej2-foto-redonda {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    min-height: 0;
+    border: 3px solid #ffffff;
+    position: relative;
+    background-color: #ffffff;
+    background-image:
+        linear-gradient(to top right, transparent calc(50% - 0.5px), #999999 50%, transparent calc(50% + 0.5px)),
+        linear-gradient(to bottom right, transparent calc(50% - 0.5px), #999999 50%, transparent calc(50% + 0.5px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ej2-foto-redonda span {
+    font-size: 10px;
+    background-color: #ffffff;
+    padding: 0 3px;
+}
+
+.ej2-nombre {
+    font-size: 11px;
+    color: #555555;
+    margin: 6px 0 0 0;
+}
+
+.ej2-texto {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 11px;
+    color: #555555;
+}
+
+.ej2-texto p {
+    margin: 0 0 8px 0;
+}
+
+.ej2-texto a {
+    color: #2f92c8;
+}
+
+/* Bloque de equipo (tres personas) */
+.ej2-equipo {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.ej2-equipo figure {
+    margin: 0;
+    text-align: center;
+}
+
+.ej2-equipo figcaption {
+    font-size: 10px;
+    color: #555555;
+    margin-top: 6px;
+}
+
+/* Bloque de servicios */
+.ej2-iconos {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.ej2-icono-servicio {
+    width: 46px;
+    height: 46px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.ej2-icono-naranja {
+    background-color: #f39c12;
+}
+
+.ej2-texto-naranja {
+    background-color: #ee7f1b;
+    color: #ffffff;
+    align-self: stretch;
+    padding: 14px 16px;
+}
+
+.ej2-texto-naranja h3 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+/* ==========================================================================
+   5. ejercicio3.html
+   ========================================================================== */
+
+.ej3-pagina {
+    max-width: 950px;
+    margin: 18px auto;
+    background-color: #ffffff;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    padding: 14px;
+}
+
+/* --- Menu superior y buscador --- */
+.ej3-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.ej3-menu a {
+    color: #1a4f8a;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 4px;
+}
+
+.ej3-buscador {
+    border: 1px solid #999999;
+    border-radius: 12px;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ej3-buscador input {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    width: 90px;
+}
+
+.ej3-buscador label {
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+/* --- Distribucion en tres columnas --- */
+.ej3-columnas {
+    display: flex;
+    align-items: flex-start;
+}
+
+.ej3-columna-izquierda {
+    flex: 2.2;
+}
+
+.ej3-columna-centro {
+    flex: 1.6;
+    margin: 0 10px;
+}
+
+.ej3-columna-derecha {
+    flex: 1;
+}
+
+.ej3-columna-izquierda fieldset {
+    border: 1px solid #333333;
+    padding: 10px;
+    margin: 0;
+}
+
+.ej3-columna-izquierda legend {
+    font-size: 12px;
+    padding: 0 6px;
+}
+
+.ej3-columna-izquierda p {
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.ej3-imagen-grande {
+    height: 200px;
+    border-width: 2px;
+}
+
+.ej3-imagen-centro {
+    height: 150px;
+    border-width: 2px;
+}
+
+.ej3-fila-cajas {
+    display: flex;
+}
+
+.ej3-caja-gris {
+    flex: 1;
+    height: 34px;
+    background-color: #e6e6e6;
+    margin: 0 4px 10px 0;
+}
+
+.ej3-columna-centro p {
+    font-size: 11px;
+    line-height: 1.5;
+    background-color: #e6e6e6;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.ej3-columna-derecha .marco-imagen {
+    height: 72px;
+    border-width: 2px;
+    margin-bottom: 12px;
+}
+
+
+/* ==========================================================================
+   6. ejercicio4.html
+   ========================================================================== */
+
+.ej4-contenido {
+    max-width: 760px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 24px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.ej4-contenido h1 {
+    font-size: 30px;
+    margin: 0 0 26px 0;
+}
+
+.ej4-formulario p {
+    margin: 0 0 14px 0;
+}
+
+.ej4-formulario label {
+    font-size: 17px;
+    margin-right: 6px;
+}
+
+.ej4-formulario input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 3px 5px;
+    width: 215px;
+    border: 1px solid #9ab3cc;
+}
+
+/* Colores de ayuda: el borde cambia solo cuando el campo ya tiene texto escrito */
+.ej4-formulario input:not(:placeholder-shown):invalid {
+    border-color: #c0392b;
+    background-color: #fdf1f0;
+}
+
+.ej4-formulario input:not(:placeholder-shown):valid {
+    border-color: #27ae60;
+    background-color: #f2fbf5;
+}
+
+.ej4-botones {
+    margin-top: 18px;
+}
+
+.ej4-botones button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 3px 12px;
+    margin: 0 4px;
+    border: 1px solid #999999;
+    background-color: #efefef;
+    cursor: pointer;
+}

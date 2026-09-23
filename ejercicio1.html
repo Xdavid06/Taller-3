@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejercicio 1 del Taller Practico 3: pagina corporativa construida con HTML y CSS">
+    <meta name="keywords" content="CECAR, HTML, CSS, ejercicio 1, wireframe, company name">
+    <meta name="user" content="Nombre del Estudiante">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio # 1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina-ejercicio1">
+
+    <!-- Barra propia del taller: permite que todas las paginas queden enlazadas entre si -->
+    <nav class="barra-taller">
+        <a href="index.html">Menu Principal</a>
+        <a href="ejercicio1.html">Ejercicio # 1</a>
+        <a href="ejercicio2.html">Ejercicio # 2</a>
+        <a href="ejercicio3.html">Ejercicio # 3</a>
+        <a href="ejercicio4.html">Ejercicio # 4</a>
+    </nav>
+
+    <div class="ej1-pagina">
+
+        <!-- Encabezado: logo, nombre de la empresa, idiomas y enlaces superiores -->
+        <header class="ej1-cabecera">
+            <div class="ej1-marca">
+                <div class="ej1-logo">
+                    <span class="ej1-logo-simbolo">&reg;</span>
+                    <span class="ej1-logo-texto">LOGO</span>
+                </div>
+                <div class="ej1-titulos">
+                    <h1>Company Name</h1>
+                    <h2>Description</h2>
+                </div>
+            </div>
+
+            <div class="ej1-cabecera-derecha">
+                <ul class="ej1-idiomas">
+                    <li>EN</li>
+                    <li>FR</li>
+                    <li>DE</li>
+                    <li>CN</li>
+                </ul>
+                <p class="ej1-enlaces-superiores">
+                    <a href="#">How It Works</a> |
+                    <a href="#">Edraw Max</a> |
+                    <a href="#">Edraw Mind Map</a>
+                </p>
+            </div>
+        </header>
+
+        <!-- Menu principal del sitio con su buscador -->
+        <nav class="ej1-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Buy Now</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <form class="ej1-buscador" action="#" method="get">
+                <input type="search" name="busqueda" placeholder="Search">
+                <button type="submit">&#9906;</button>
+            </form>
+        </nav>
+
+        <!-- Banner principal -->
+        <div class="marco-imagen ej1-banner"><span>Image</span></div>
+
+        <div class="ej1-cuerpo">
+
+            <!-- Columna izquierda: noticia, boletin y opiniones -->
+            <main class="ej1-columna-principal">
+
+                <section class="ej1-bloque">
+                    <h3 class="ej1-titulo-barra">Top Story Headline</h3>
+
+                    <div class="ej1-noticia">
+                        <div class="marco-imagen ej1-imagen-noticia"><span>Image</span></div>
+                        <div class="ej1-noticia-texto">
+                            <p>Text description</p>
+                            <div class="lineas-texto"></div>
+                        </div>
+                    </div>
+
+                    <div class="ej1-botones">
+                        <button type="button">Download</button>
+                        <button type="button">Purchase</button>
+                    </div>
+                </section>
+
+                <section class="ej1-bloque">
+                    <h3 class="ej1-titulo-barra">A monthly newsletter brought to you by (Company Name)</h3>
+
+                    <div class="ej1-galeria">
+                        <figure>
+                            <div class="marco-imagen"><span>Image</span></div>
+                            <figcaption>VOL 1, ISSUE 1<br>IMAGE 1 VERY<br>BEAUTIFUL</figcaption>
+                        </figure>
+                        <figure>
+                            <div class="marco-imagen"><span>Image</span></div>
+                            <figcaption>VOL 1, ISSUE 1<br>IMAGE 1 VERY<br>BEAUTIFUL</figcaption>
+                        </figure>
+                        <figure>
+                            <div class="marco-imagen"><span>Image</span></div>
+                            <figcaption>VOL 1, ISSUE 1<br>IMAGE 1 VERY<br>BEAUTIFUL</figcaption>
+                        </figure>
+                        <figure>
+                            <div class="marco-imagen"><span>Image</span></div>
+                            <figcaption>VOL 1, ISSUE 1<br>IMAGE 1 VERY<br>BEAUTIFUL</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="ej1-bloque ej1-opiniones">
+                    <h3>User Reviews</h3>
+                    <div class="lineas-texto lineas-cortas"></div>
+                </section>
+
+            </main>
+
+            <!-- Columna derecha: redes sociales y navegacion -->
+            <aside class="ej1-lateral">
+
+                <section>
+                    <h3 class="ej1-titulo-barra ej1-titulo-centrado">Social</h3>
+                    <div class="ej1-video">
+                        <span class="ej1-play">&#9654;</span>
+                    </div>
+                    <div class="ej1-controles-video">
+                        <span class="ej1-control">&#9654;</span>
+                        <span class="ej1-progreso"><span class="ej1-punto"></span></span>
+                        <span class="ej1-control">&#9664;</span>
+                    </div>
+                    <button type="button" class="ej1-boton-ancho">Share &amp; Links</button>
+                </section>
+
+                <section>
+                    <h3 class="ej1-titulo-barra ej1-titulo-centrado">Navigate</h3>
+                    <ul class="ej1-lista-navegar">
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                    </ul>
+                </section>
+
+            </aside>
+
+        </div>
+
+        <!-- Pie de pagina -->
+        <footer class="ej1-pie">
+            <p class="ej1-pie-enlaces">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Site Maps</a>
+                <a href="#">Links</a>
+            </p>
+            <p class="ej1-copyright">Copyright Company 2013; All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
